@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tamil Matrimony</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./image/logo.png">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(./image/m2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    #new{
+        width: 400px;
+        height: 400px;
+        background-color: white;
+        border: white;
+        box-shadow: 2px 2px 30px black;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 500px;
+    }
+    input{
+        width: 340px;
+        height: 35px;
+        border-radius: 7px;
+        border: 1px solid black;
+        padding-left: 5px;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    img{
+        height: 150px;
+        border-radius: 150px;
+    }
+    #drop{
+        width: 350px;
+        height: 35px;
+        border-radius: 7px;
+        border: 1px solid black;
+        padding-left: 5px;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 15px;
+        font-size: 15px;
+        color: #777777;
+    }
+    
+    h3{
+        margin-left: 85px;
+        font-family: "Lato", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+    }
+    #sub{
+        width: 350px;
+        color: white;
+        background-color: #E06506;
+        height: 40px;
+        border: none;
+    }
+    p{
+        color: #777777;
+        padding-left: 20px;
+    }
+    #back{
+        width: 100px;
+        margin-left: 650px;
+        border: none;
+        background-color: #E06506;
+        color: white;
+    }
+    
+</style>
+</head>
+<body>
+    <img src="./image/logo.png" alt="">
+    <div id="new">
+        <form action="http://localhost:8080/App/new" method="post">
+            <br>
+            <h3>Find your perfect match</h3>
+            <select id="drop">
+                <option value="">Profile</option>
+                <option value="">Myself</option>
+                <option value="">Son</option>
+                <option value="">Daughter</option>
+                <option value="">Sister</option>
+                <option value="">Brother</option>
+            </select>
+            <br><br>
+            <input type="text" placeholder="Enter Name" name="uname">
+            <br><br>
+            <input type="text" placeholder="Enter Email Id" name="umail">
+            <br><br>
+            <input type="text" placeholder="Enter Mobile Number" name="uph">
+            <br><br>
+            <input type="submit" value="REGISTER  FREE" id="sub">
+            <br><br>
+            <p>*By clicking register free, I agree to ther T&C and Privacy Policy</p>
+        </form>
+    </div>
+    <a href="./index.html"><input type="submit" value="Back" id="back"></a>
+</body>
+
+</html>
